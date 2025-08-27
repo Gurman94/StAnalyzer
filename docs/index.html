@@ -13,8 +13,8 @@
       --card: #dc0e29;
       --text: #e6edf3;
       --muted: #9a9ea5;
-      --accent: #7bb6ff;       /* softer sky‑blue */
-      --accent2: #4e7dff;      /* softer indigo */
+      --accent: #7bb6ff;       
+      --accent2: #4e7dff;      
       --ring: rgba(125, 211, 252, 0.35);
     }
     *{box-sizing:border-box}
@@ -96,7 +96,6 @@
 
       <section class="card hero">
         <div>
-          <p class="kicker">Service notice</p>
           <h1 class="title">The website is temporarily offline<span class="gradient-text"> to cut costs</span></h1>
           <p class="subtitle">
             Operating costs for continuous compute and hosting grew faster than expected. I am optimizing the solver pipeline and will be back once the run cost is sustainable.
@@ -157,11 +156,13 @@
           title.style.transform = 'translateY(0)';
         });
       }
-      // Fake stat count up
+
       const counters = document.querySelectorAll('[data-count]');
-      // image click to fullscreen modal
+
       const figImg = document.querySelector('.figure img');
+
       const modal = document.getElementById('imgModal');
+
       if (figImg && modal){
         figImg.style.cursor='zoom-in';
         figImg.addEventListener('click', () => modal.classList.add('show'));
